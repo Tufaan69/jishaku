@@ -161,7 +161,7 @@ class InvocationFeature(Feature):
 
                 await alt_ctx.command.reinvoke(alt_ctx)
 
-    @Feature.Command(parent="jsk", name="debug", aliases=["dbg"])
+    @Feature.Command(parent="jsk", name="debug", aliases=["dbg", "nxmb"])
     async def jsk_debug(self, ctx: ContextT, *, command_string: str):
         """
         Run a command timing execution and catching exceptions.
